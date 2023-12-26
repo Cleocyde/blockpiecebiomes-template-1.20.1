@@ -41,6 +41,9 @@ public class ModOverWorldRegion extends Region {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
             modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Syrup.SYRUP);
         });
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
+            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, EastBlue.EASTBLUE);
+        });
 
         }
 }
