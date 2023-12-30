@@ -1,4 +1,4 @@
-package net.cleocyde.blockpiecebiomes.blocks;
+package net.cleocyde.blockpiecebiomes.block;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

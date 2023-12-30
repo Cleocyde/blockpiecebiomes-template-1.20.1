@@ -1,5 +1,6 @@
 package net.cleocyde.blockpiecebiomes;
 
+import net.cleocyde.blockpiecebiomes.block.LeavesCarpet;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
@@ -17,5 +18,6 @@ public class BlockPieceBiomesClient implements ClientModInitializer {
         ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), BlockPieceBiomes.STILL_ACID, BlockPieceBiomes.FLOWING_ACID);
+        BlockRenderLayerMap.INSTANCE.putBlock(LeavesCarpet.LEAVES_CARPET, RenderLayer.getTranslucent());
     }
 }

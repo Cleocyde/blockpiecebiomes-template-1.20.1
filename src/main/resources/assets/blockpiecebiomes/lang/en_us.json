@@ -1,0 +1,10 @@
+{
+	"block.blockpiecebiomes.black_cloud_block": "Bloc de nuage Noir",
+	"block.blockpiecebiomes.white_cloud_block": "Bloc de nuage Blanc",
+	"block.blockpiecebiomes.red_leaves": "feuilles rouge",
+	"block.blockpiecebiomes.orange_leaves": "feuilles orange",
+	"block.blockpiecebiomes.yellow_leaves": "feuilles jaune",
+	"item.blockpiecebiomes.cloud_bucket": "sceau de nuage",
+	"block.blockpiecebiomes.leaves_carpet": "tapis de feuilles",
+	"itemGroup.blockpiecebiomes.test_group": "Block Piece"
+}
