@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+  [
+    "blockpiecebiomes:still_cloud_fluid",
+    "blockpiecebiomes:flowing_cloud_fluid"
+  ]
+}
