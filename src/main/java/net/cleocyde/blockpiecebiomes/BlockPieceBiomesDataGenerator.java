@@ -27,6 +27,7 @@ public class BlockPieceBiomesDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, LogueTown::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, ArchipelKonomi::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, EastBlue::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, CactusIsland::boostrap);
 
 
 	}
