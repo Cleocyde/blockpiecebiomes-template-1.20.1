@@ -17,7 +17,7 @@ import net.minecraft.world.WorldView;
 public class SkypieaWater extends FlowableFluid {
     @Override
     public boolean matchesType(Fluid fluid) {
-        return fluid == getStill() || fluid == getFlowing();
+        return fluid == getStill();
     }
 
     /**
@@ -72,7 +72,7 @@ public class SkypieaWater extends FlowableFluid {
      */
     @Override
     protected int getFlowSpeed(WorldView worldView) {
-        return 4;
+        return 0;
     }
 
     /**
@@ -80,7 +80,7 @@ public class SkypieaWater extends FlowableFluid {
      */
     @Override
     protected int getLevelDecreasePerBlock(WorldView worldView) {
-        return 1;
+        return 8;
     }
 
     @Override
@@ -93,7 +93,7 @@ public class SkypieaWater extends FlowableFluid {
      */
     @Override
     public int getTickRate(WorldView worldView) {
-        return 5;
+        return 10;
     }
 
     /**
