@@ -32,10 +32,10 @@ import static net.cleocyde.blockpiecebiomes.item.ModItems.*;
 public class BlockPieceBiomes implements ModInitializer {
 	public static final String MOD_ID = "blockpiecebiomes";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static FlowableFluid STILL_ACID;
-	public static FlowableFluid FLOWING_ACID;
-	public static Item ACID_BUCKET;
-	public static Block ACID;
+	public static FlowableFluid STILL_CLOUD;
+	public static FlowableFluid FLOWING_CLOUD;
+	public static Item CLOUD_BUCKET;
+	public static Block CLOUD;
 	@Override
 	public void onInitialize() {
 		//REGISTERING
@@ -65,11 +65,11 @@ public class BlockPieceBiomes implements ModInitializer {
 
 
 		//FLUIDS
-		STILL_ACID = Registry.register(Registries.FLUID, new Identifier(MOD_ID, "still_cloud_fluid"), new CloudFluid.Still());
-		FLOWING_ACID = Registry.register(Registries.FLUID, new Identifier(MOD_ID, "flowing_cloud_fluid"), new CloudFluid.Flowing());
-		ACID_BUCKET = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "cloud_bucket"),
-				new BucketItem(STILL_ACID, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
-		ACID = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "acid"), new FluidBlock(STILL_ACID, FabricBlockSettings.copy(Blocks.WATER)){});
+		STILL_CLOUD = Registry.register(Registries.FLUID, new Identifier(MOD_ID, "still_cloud_fluid"), new CloudFluid.Still());
+		FLOWING_CLOUD = Registry.register(Registries.FLUID, new Identifier(MOD_ID, "flowing_cloud_fluid"), new CloudFluid.Flowing());
+		CLOUD_BUCKET = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "cloud_bucket"),
+				new BucketItem(STILL_CLOUD, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+		CLOUD = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "acid"), new FluidBlock(STILL_CLOUD, FabricBlockSettings.copy(Blocks.WATER)){});
 	}
 
 

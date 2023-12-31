@@ -93,7 +93,7 @@ public class SkypieaWater extends FlowableFluid {
      */
     @Override
     public int getTickRate(WorldView worldView) {
-        return 5;
+        return 10;
     }
 
     /**

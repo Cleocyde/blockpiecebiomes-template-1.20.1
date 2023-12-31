@@ -11,13 +11,13 @@ import net.minecraft.util.Identifier;
 public class BlockPieceBiomesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        FluidRenderHandlerRegistry.INSTANCE.register(BlockPieceBiomes.STILL_ACID, BlockPieceBiomes.FLOWING_ACID, new SimpleFluidRenderHandler(
+        FluidRenderHandlerRegistry.INSTANCE.register(BlockPieceBiomes.STILL_CLOUD, BlockPieceBiomes.FLOWING_CLOUD, new SimpleFluidRenderHandler(
                 new Identifier("minecraft:block/water_still"),
                 new Identifier("minecraft:block/water_flow"),
                 0xffffff
         ));
 
-        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), BlockPieceBiomes.STILL_ACID, BlockPieceBiomes.FLOWING_ACID);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), BlockPieceBiomes.STILL_CLOUD, BlockPieceBiomes.FLOWING_CLOUD);
         BlockRenderLayerMap.INSTANCE.putBlock(LeavesCarpet.LEAVES_CARPET, RenderLayer.getTranslucent());
     }
 }
