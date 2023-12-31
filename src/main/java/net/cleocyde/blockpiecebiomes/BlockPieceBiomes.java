@@ -16,8 +16,6 @@ import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static net.cleocyde.blockpiecebiomes.block.BlackCloudBlock.BLACK_CLOUD_BLOCK;
 import static net.cleocyde.blockpiecebiomes.block.LeavesCarpet.LEAVES_CARPET;
@@ -31,7 +29,6 @@ import static net.cleocyde.blockpiecebiomes.item.ModItems.*;
 
 public class BlockPieceBiomes implements ModInitializer {
 	public static final String MOD_ID = "blockpiecebiomes";
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static FlowableFluid STILL_CLOUD;
 	public static FlowableFluid FLOWING_CLOUD;
 	public static Item CLOUD_BUCKET;
@@ -53,6 +50,7 @@ public class BlockPieceBiomes implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "leaves_carpet"), LEAVES_CARPET);
 
 
+
 		//BLOCK ITEMS
 		Registry.register(Registries.ITEM, new Identifier(BlockPieceBiomes.MOD_ID, "example_block"), new BlockItem(TEST_BLOCK, new FabricItemSettings()));
 		Registry.register(Registries.ITEM, new Identifier(BlockPieceBiomes.MOD_ID, "white_cloud_block"), new BlockItem(WHITE_CLOUD_BLOCK, new FabricItemSettings()));
@@ -69,7 +67,7 @@ public class BlockPieceBiomes implements ModInitializer {
 		FLOWING_CLOUD = Registry.register(Registries.FLUID, new Identifier(MOD_ID, "flowing_cloud_fluid"), new CloudFluid.Flowing());
 		CLOUD_BUCKET = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "cloud_bucket"),
 				new BucketItem(STILL_CLOUD, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
-		CLOUD = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "acid"), new FluidBlock(STILL_CLOUD, FabricBlockSettings.copy(Blocks.WATER)){});
+		CLOUD = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "cloud_water_block"), new FluidBlock(STILL_CLOUD, FabricBlockSettings.copy(Blocks.WATER)){});
 	}
 
 

@@ -3,8 +3,6 @@ package net.cleocyde.blockpiecebiomes.item;
 import net.cleocyde.blockpiecebiomes.BlockPieceBiomes;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -13,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import static net.cleocyde.blockpiecebiomes.BlockPieceBiomes.CLOUD_BUCKET;
 import static net.cleocyde.blockpiecebiomes.block.BlackCloudBlock.BLACK_CLOUD_BLOCK;
 import static net.cleocyde.blockpiecebiomes.block.LeavesCarpet.LEAVES_CARPET;
 import static net.cleocyde.blockpiecebiomes.block.OrangeLeaves.ORANGE_LEAVES;
@@ -39,6 +38,7 @@ public class ModItems {
                 entries.add(BLACK_CLOUD_BLOCK);
                 entries.add(LEAVES_CARPET);
                 entries.add(WHITE_CLOUD_BLOCK);
+                entries.add(CLOUD_BUCKET);
             })
             .build();
 
