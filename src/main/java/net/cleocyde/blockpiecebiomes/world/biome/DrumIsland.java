@@ -14,12 +14,12 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
-public class PunkHazardLava {
-        public static final RegistryKey<Biome> PUNK_HAZARD_LAVA = RegistryKey.of(RegistryKeys.BIOME,
-                new Identifier(BlockPieceBiomes.MOD_ID, "punk_hazard_lave"));
+public class DrumIsland {
+        public static final RegistryKey<Biome> DRUM_ISLAND = RegistryKey.of(RegistryKeys.BIOME,
+                new Identifier(BlockPieceBiomes.MOD_ID, "ile_de_drum"));
 
     public static void boostrap(Registerable<Biome> context) {
-        context.register(PUNK_HAZARD_LAVA, testBiome(context));
+        context.register(DRUM_ISLAND, testBiome(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
@@ -55,19 +55,19 @@ public class PunkHazardLava {
         DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
 
         return new Biome.Builder()
-                .precipitation(false)
+                .precipitation(true)
                 .downfall(0f)
-                .temperature(1.5f)
+                .temperature(-0.7f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0x522d2d)
-                        .waterFogColor(0x522d2d)
-                        .skyColor(0x4d0707)
-                        .grassColor(0x4d0707)
-                        .foliageColor(0xe4d0707)
-                        .particleConfig(new BiomeParticleConfig(ParticleTypes.ASH, 0.025F))
-                        .fogColor(0x522d2d)
+                        .waterColor(0x7eabf2)
+                        .waterFogColor(0x7eabf2)
+                        .skyColor(0xb9cceb)
+                        .grassColor(0xe6eefa)
+                        .foliageColor(0xe6eefa)
+                        .particleConfig(new BiomeParticleConfig(ParticleTypes.SNOWFLAKE, 0.025F))
+                        .fogColor(0xf5f9ff)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }
