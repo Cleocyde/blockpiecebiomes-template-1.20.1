@@ -5,6 +5,7 @@ import net.cleocyde.blockpiecebiomes.fluids.CloudFluid;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FluidBlock;
@@ -13,9 +14,11 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
 
 import static net.cleocyde.blockpiecebiomes.block.BlackCloudBlock.BLACK_CLOUD_BLOCK;
 import static net.cleocyde.blockpiecebiomes.block.LeavesCarpet.LEAVES_CARPET;
@@ -33,6 +36,7 @@ public class BlockPieceBiomes implements ModInitializer {
 	public static FlowableFluid FLOWING_CLOUD;
 	public static Item CLOUD_BUCKET;
 	public static Block CLOUD;
+
 	@Override
 	public void onInitialize() {
 		//REGISTERING
@@ -68,7 +72,13 @@ public class BlockPieceBiomes implements ModInitializer {
 		CLOUD_BUCKET = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "cloud_bucket"),
 				new BucketItem(STILL_CLOUD, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 		CLOUD = Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "cloud_water_block"), new FluidBlock(STILL_CLOUD, FabricBlockSettings.copy(Blocks.WATER)){});
+
+
+		//PARTICLES
+		Registry.register(Registries.PARTICLE_TYPE, new Identifier(MOD_ID, "sand_particle"), SAND_PARTICLE);
+
 	}
 
+	public static final DefaultParticleType SAND_PARTICLE = FabricParticleTypes.simple();
 
 }

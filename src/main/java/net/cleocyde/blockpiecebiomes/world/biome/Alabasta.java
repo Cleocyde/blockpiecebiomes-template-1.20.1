@@ -3,6 +3,7 @@ package net.cleocyde.blockpiecebiomes.world.biome;
 import net.cleocyde.blockpiecebiomes.BlockPieceBiomes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -67,7 +68,7 @@ public class Alabasta {
                         .grassColor(0x79c05a)
                         .foliageColor(0x59ae30)
                         .fogColor(0xc0d8ff)
-                        .particleConfig(new BiomeParticleConfig(ParticleTypes.WHITE_ASH, 0.025F))
+                        .particleConfig(new BiomeParticleConfig(BlockPieceBiomes.SAND_PARTICLE, 0.025F))
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }
