@@ -31,6 +31,24 @@ public class ModOverWorldRegion extends Region {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, CactusIsland.CACTUSISLAND));
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, LittleGarden.LITTLE_GARDEN));
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, DrumIsland.DRUM_ISLAND));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, RedLine.REDLINE));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, CapJumeaux.CAP_JUMEAUX));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, KyukaIsland.KYUKA_ISLAND));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Alabasta.ALABASTA));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Jaya.JAYA));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, LongRingLongLand.LONG_RING_LONG_LAND));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, WaterSeven.WATER_SEVEN));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, EniesLobby.ENIES_LOBBY));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Baltigo.BALTIGO));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Banaro.BANARO));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, ArchipelSabaody.ARCHIPEL_SABAODY));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Balgimoa.BALGIMOA));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Kedetrav.KEDETRAV));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Harahettania.HARAHETTANIA));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Kuraigana.KURAIGANA));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Kenzan.KENZAN));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, MarineFord.MARINE_FORD));
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.FOREST, Foolshout.FOOLSHOUT));
 
         }
 }

@@ -30,6 +30,24 @@ public class BlockPieceBiomesDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, CactusIsland::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, LittleGarden::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, DrumIsland::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, RedLine::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, CapJumeaux::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, KyukaIsland::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Alabasta::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Jaya::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, LongRingLongLand::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WaterSeven::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, EniesLobby::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Baltigo::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Banaro::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ArchipelSabaody::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Balgimoa::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Kedetrav::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Harahettania::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Kuraigana::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Kenzan::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, MarineFord::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Foolshout::boostrap);
 
 
 	}
