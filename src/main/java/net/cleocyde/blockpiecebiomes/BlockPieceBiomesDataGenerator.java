@@ -48,6 +48,11 @@ public class BlockPieceBiomesDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, Kenzan::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, MarineFord::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, Foolshout::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Nanimonai::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Petit::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Guanhao::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, SaintPoplar::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, GrandLineParadise::boostrap);
 
 
 	}
