@@ -19,7 +19,7 @@
     },
     "particle": {
       "options": {
-        "type": "blockpiecebiomes:sand_particle.json"
+        "type": "blockpiecebiomes:sand_particle"
       },
       "probability": 0.025
     },
