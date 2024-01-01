@@ -68,7 +68,7 @@ public class Alabasta {
                         .grassColor(0x79c05a)
                         .foliageColor(0x59ae30)
                         .fogColor(0xc0d8ff)
-                        .particleConfig(new BiomeParticleConfig(BlockPieceBiomes.SAND_PARTICLE, 0.025F))
+                        .particleConfig(new BiomeParticleConfig(BlockPieceBiomes.SAND_PARTICLE, 0.0025F))
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }
