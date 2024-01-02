@@ -22,7 +22,7 @@ public class BackgroundRendererMixin {
 
 		// Default
 		if (cameraSubmersionType == CameraSubmersionType.WATER) {
-				RenderSystem.setShaderFogEnd(300F);
+				RenderSystem.setShaderFogEnd(200F);
 
 			}
 		}

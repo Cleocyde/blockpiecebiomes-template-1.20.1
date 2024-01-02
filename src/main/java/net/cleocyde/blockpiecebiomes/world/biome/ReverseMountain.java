@@ -16,12 +16,12 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
-public class Baltigo {
-        public static final RegistryKey<Biome> BALTIGO = RegistryKey.of(RegistryKeys.BIOME,
-                new Identifier(BlockPieceBiomes.MOD_ID, "baltigo"));
+public class ReverseMountain {
+        public static final RegistryKey<Biome> REVERSE_MOUNTAIN = RegistryKey.of(RegistryKeys.BIOME,
+                new Identifier(BlockPieceBiomes.MOD_ID, "reverse_mountain"));
 
     public static void boostrap(Registerable<Biome> context) {
-        context.register(BALTIGO, testBiome(context));
+        context.register(REVERSE_MOUNTAIN, testBiome(context));
     }
 
     public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {

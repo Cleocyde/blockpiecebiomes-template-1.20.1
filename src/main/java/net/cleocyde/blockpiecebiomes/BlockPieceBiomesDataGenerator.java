@@ -38,7 +38,7 @@ public class BlockPieceBiomesDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, LongRingLongLand::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, WaterSeven::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, EniesLobby::boostrap);
-		registryBuilder.addRegistry(RegistryKeys.BIOME, Baltigo::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Lulusia::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, Banaro::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, ArchipelSabaody::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, Balgimoa::boostrap);
@@ -53,6 +53,7 @@ public class BlockPieceBiomesDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, Guanhao::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, SaintPoplar::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, GrandLineParadise::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ReverseMountain::boostrap);
 
 
 	}
