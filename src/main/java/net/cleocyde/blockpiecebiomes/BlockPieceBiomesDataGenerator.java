@@ -54,6 +54,39 @@ public class BlockPieceBiomesDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, SaintPoplar::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, GrandLineParadise::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.BIOME, ReverseMountain::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Raijin::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, RiskyRed::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Mystoria::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, KaraiBari::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Foodvalten::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Dressrosa::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, GreenBit::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Prodence::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Sphinx::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoOnigashima::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoCapital::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoHakumai::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoKibi::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoKuri::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoRingo::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, WanoUdon::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Yukiryu::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, BrockCollie::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Baltigo::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, TottoLand::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Erbaf::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Ruche::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Zou::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, LodeStar::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, LaughTale::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, EggHead::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, AmazonLily::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Ruskaina::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ImpelDown::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, Shinsekai::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, OceanPoissons::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, IlePoissons::boostrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, BaseMarine::boostrap);
 
 
 	}
